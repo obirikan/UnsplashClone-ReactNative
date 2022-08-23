@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   container2: {
     flex: 0.1,
-    backgroundColor: 'green',
+    backgroundColor: '#03071e',
   },
   container3: {
     flex: 3,
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   box:{
     backgroundColor:'white',
     color:'black',
-    margin:40,
+    margin:10,
     borderRadius:100/20
   },
 
