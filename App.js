@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet,Image, View,Button,ScrollView } from 'react-native';
+import { StyleSheet,Image, View,Button,ScrollView,Text } from 'react-native';
 import Header from './Components/Header';
 import Content from './Components/Content';
 import { useEffect } from 'react';
@@ -21,6 +21,9 @@ export default function App() {
      <Content/>
     </ScrollView>
     <View style={styles.container2}>
+      <Text style={styles.txt}>Home</Text>
+      <Text style={styles.txt}>About</Text>
+      <Text style={styles.txt}>Contact Us</Text>
     </View>
     </>
   );
@@ -34,6 +37,11 @@ const styles = StyleSheet.create({
   container2: {
     flex: 0.1,
     backgroundColor: '#03071e',
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+    
   },
   container3: {
     flex: 3,
@@ -45,5 +53,10 @@ const styles = StyleSheet.create({
     margin:10,
     borderRadius:100/20
   },
+  txt:{
+    color:'white',
+    fontSize:25,
+    margin:10
+  }
 
 });
