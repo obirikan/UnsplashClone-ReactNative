@@ -14,7 +14,7 @@ const Content = () => {
     })}
     data()
  },[])
-console.log(url)
+
   return (
     <View style={styles.container}>
         <FlatList

@@ -1,39 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet,Image, View,Button,ScrollView,Text } from 'react-native';
 import Header from './Components/Header';
-import Content from './Components/Content';
-import { useEffect } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Profile from './Components/Profile';
+
+import Stack from './Components/Stack.js';
+const Stac= createNativeStackNavigator();
 
 export default function App() {
-  
   return (
-    <>
-    <View >
-      <Header/>
-    </View>
-    <ScrollView style={styles.container3}>
-     <View style={styles.box}>
-     <Image
-        style={styles.tinyLogo}
-        source={{uri: 'https://reactnative.dev/img/tiny_logo.png',}}
-      />
-     </View>
-     <Content/>
-    </ScrollView>
-    <View style={styles.container2}>
-      <Text style={styles.txt}>Home</Text>
-      <Text style={styles.txt}>About</Text>
-      <Text style={styles.txt}>Contact Us</Text>
-    </View>
-    </>
+<>
+<Header/>
+    <NavigationContainer>
+<Stac.Navigator   screenOptions={{
+    headerShown: false
+  }}>
+        <Stac.Screen name="Homddse" component={Stack}/>
+        <Stac.Screen name="Profile" component={Profile} />
+</Stac.Navigator>
+    </NavigationContainer>
+</>
+
   );
 }
 
 const styles = StyleSheet.create({
-  container1: {
-    flex: 1,
-    backgroundColor: 'grey',
-  },
+
   container2: {
     flex: 0.1,
     backgroundColor: '#03071e',
@@ -43,20 +35,13 @@ const styles = StyleSheet.create({
     alignItems:'center',
     
   },
-  container3: {
-    flex: 3,
-    // backgroundColor: 'yellow',
-  },
-  box:{
-    backgroundColor:'white',
-    color:'black',
-    margin:10,
-    borderRadius:100/20
-  },
   txt:{
     color:'white',
     fontSize:20,
     margin:10
   }
+ 
 
 });
+
+
