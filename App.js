@@ -15,6 +15,7 @@ export default function App() {
 <Stac.Navigator   screenOptions={{
     headerShown: false
   }}>
+    
         <Stac.Screen name="Homddse" component={Stack}/>
         <Stac.Screen name="Profile" component={Profile} />
 </Stac.Navigator>
