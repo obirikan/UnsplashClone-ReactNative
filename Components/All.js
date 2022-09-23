@@ -7,8 +7,8 @@ const All = ({navigation}) => {
   return (
    <View>
       <Text style={styles.txt}>Home</Text>
-      <Text style={styles.txt}>About</Text>
-      <Text style={styles.txt}>Contact</Text>
+      <Text style={styles.txt}>About us</Text>
+      <Text style={styles.txt}>Contact us</Text>
    </View>
   )
 }
