@@ -8,7 +8,7 @@ const All = ({navigation}) => {
    <View>
       <Text style={styles.txt}>Home</Text>
       <Text style={styles.txt}>About</Text>
-      <Text style={styles.txt}>Contact</Text>
+      <Text style={styles.txt}>Contactus</Text>
    </View>
   )
 }
