@@ -1,15 +1,15 @@
 import React from 'react'
 import { StyleSheet,Image, View,Button,ScrollView,Text } from 'react-native';
-import Header from './Header';
+// import Header from './Header';
 import Content from './Content';
-import All from './All.js';
+// import All from './All.js';
 const Stack = ({navigation}) => {
   return (
     <>
     <ScrollView style={styles.container3}>
       <Content/>
     </ScrollView>
-  {/* <View style={styles.container2}>
+  <View style={styles.container2}>
     <Text style={styles.txt}
     onPress={() =>
       navigation.navigate('Profile', { name: 'Jane' })
@@ -23,7 +23,7 @@ const Stack = ({navigation}) => {
     >About</Text>
     <Text style={styles.txt}>Contact</Text>
     <Text style={styles.txt}>Find</Text>
-  </View>  */}
+  </View> 
     </>
   )
 }
