@@ -18,7 +18,7 @@ const Stack = ({navigation}) => {
   </Text>
     <Text style={styles.txt}
     onPress={() =>
-      navigation.navigate('Profile', { name: 'Jane' })
+      navigation.navigate('Profile', { name: 'Janet' })
     }
     >About</Text>
     <Text style={styles.txt}>Contact</Text>

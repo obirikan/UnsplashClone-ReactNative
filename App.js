@@ -12,10 +12,7 @@ export default function App() {
 <>
 <Header/>
     <NavigationContainer>
-<Stac.Navigator   screenOptions={{
-    headerShown: false
-  }}>
-    
+<Stac.Navigator screenOptions={{headerShown: false}}>
         <Stac.Screen name="Homddse" component={Stack}/>
         <Stac.Screen name="Profile" component={Profile} />
 </Stac.Navigator>
