@@ -12,7 +12,7 @@ const Stack = ({navigation}) => {
   <View style={styles.container2}>
     <Text style={styles.txt}
     onPress={() =>
-      navigation.navigate('Profile', { name: 'Jane' })
+      navigation.navigate('Profile', { name: 'Janey' })
     }>
       home
   </Text>
